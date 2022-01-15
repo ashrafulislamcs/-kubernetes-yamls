@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "ubuntu" {
   size                = "Standard_B1s"
   admin_username      = "adminuser"
   computer_name  = "public-machine"
-  admin_password = "Password1234!"
+  admin_password = "your_vm_password"
   disable_password_authentication="false"
   network_interface_ids = [
     azurerm_network_interface.ubuntu.id,
